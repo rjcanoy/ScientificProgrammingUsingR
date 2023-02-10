@@ -1,0 +1,69 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{tcolorbox}
+\usepackage{listings}
+\usepackage{amsmath, amssymb}
+
+\begin{document}
+\title{\textbf{Chapter 2: Exercises}}
+\author{Raymart Jay E. Canoy}
+\date{\today}
+\maketitle
+
+\noindent 1. Give R assignment statements that set the variable $z$ to
+\begin{itemize}
+\item[(a)]{${x^{a}}^{b}$}
+\item[(b)]{$(x^{a})^{b}$}
+\item[(c)]{$3x^{3}+2x^{2}+6x+1$}
+\item[(d)]{the digit in the second decimal place of $x$}
+\item[(e)]{$z+1$}
+\end{itemize}
+
+\noindent 2. Give R expression that return the following matrices and vectors
+\begin{itemize}
+\item[(a)]{$(1,2,3,4,5,6,7,8,7,6,5,4,3,2,1)$}
+\item[(b)]{$(1,2,2,3,3,3,4,4,4,4,5,5,5,5,5)$}
+\item[(c)]{$\begin{pmatrix}
+0 & 1 & 1\\
+1 & 0 & 1\\
+1 & 1 & 0
+\end{pmatrix}$}
+\item[(d)]{$\begin{pmatrix}
+0 & 2 & 3 \\
+0 & 5 & 0 \\
+7 & 0 & 0
+\end{pmatrix}$}
+\end{itemize}
+
+
+\noindent 3. Suppose $\mathtt{vec}$ is strictly positive vector of length 2. Interpreting $\mathtt{vec}$ as coordinates of a point $R^{2}$, use R to express it in polar coordinates.
+
+
+\noindent 4. Use R to produce a vector containing all integers from 1 to 100 that are not divisible by 2, 3, or 7.
+
+\noindent 5. Suppose that queue <- c("Steve", "Russel", "Alison", "Liam") and that queue represents a supermarket queue with Steve first in line. Using R expressions update the supermarket queue as successively:
+\begin{itemize}
+\item[(a)]{Barry arrives;}
+\item[(b)]{Steve is served;}
+\item[(c)]{Pam talks her way to the front with one item;}
+\item[(d)]{Barry gets impatient and leaves;}
+\item[(e)]{Alison gets impatient and leaves}
+\end{itemize}
+\noindent For the last case, you should not assume that you know where in the queue Alison is standing. Finally, using the function $\mathtt{which(x)}$, find the position of Russell in the queue. Note that when assigning a text string to a variable, it needs to be in quotes.
+
+\noindent 6. Which of the following assignments will be successful? What will the vectors $x$, $y$, and $z$ look at each stage?
+\begin{itemize}
+\item{$\mathtt{rm(list) = ls()}$}
+\item{$x \leftarrow 1$}
+\item{$x[3] \leftarrow 3$}
+\item{$y \leftarrow c()$}
+\item{$y[2] \leftarrow 2$}
+\item{$y[3] \leftarrow y[1]$}
+\item{$y[2] \leftarrow y[4]$}
+\item{$z[1] \leftarrow 0$}
+\end{itemize}
+
+\noindent 7. Build a $10 \times 10$ identity matrix. Then make all the non-zero elements 5. Do this latter step in at least two different ways.
+\end{document}
